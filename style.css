@@ -4,3 +4,11 @@ Author: Lewis Alderman
 Description: Forward is a forward thinking theme which utilises the best and most modern features web techonologies has to offer. Future brings a fresh mordern feel will bold striking features that most sites and users can appreciate.
 Template: TwentySixteen
 */
+
+/**
+ * 3.0 - Typography
+ */
+
+.home .entry-content {
+	color: red;
+}
