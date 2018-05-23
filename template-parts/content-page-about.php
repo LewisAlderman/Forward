@@ -20,6 +20,36 @@
 		<?php
 		the_content();
 
+		if ( get_field( 'company_name' ) ) { ?>
+
+			<h4><?php the_field( 'company_name' ) ?></h4>
+
+		<?php }
+
+		if ( get_field( 'telephone_number' ) ) { ?>
+
+			<h4><?php the_field( 'telephone_number' ) ?></h4>
+
+		<?php }
+
+		if ( get_field( 'contact_email_address' ) ) { ?>
+
+			<h4><?php the_field( 'contact_email_address' ) ?></h4>
+
+		<?php }
+
+		if ( get_field( 'company_logo' ) ) { ?>
+
+			<h4><img src='<?php the_field( 'company_logo' ) ?>'></h4>
+
+		<?php }
+
+		if ( get_field( 'postal_address' ) ) { ?>
+
+			<h4><?php the_field( 'postal_address' ) ?></h4>
+
+		<?php }
+
 		wp_link_pages( array(
 			'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentysixteen' ) . '</span>',
 			'after'       => '</div>',
